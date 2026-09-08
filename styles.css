@@ -41,7 +41,9 @@ main { padding:42px 0 34px; outline:none; }
 .symbol-slot.selected { color:var(--ink); border-style:solid; border-color:var(--yellow); background:#fff8d8; }
 .compare-title { margin:0 0 14px; text-align:center; font-size:19px; }
 .symbol-choices { display:flex; justify-content:center; gap:16px; }
-.symbol-button { width:118px; min-height:72px; border:2px solid var(--ink); border-radius:18px; color:var(--ink); background:white; font-size:42px; font-weight:900; cursor:pointer; box-shadow:0 5px 0 var(--ink); transition:transform .12s,box-shadow .12s,background .12s; }
+.symbol-button { width:118px; min-height:88px; padding:8px; border:2px solid var(--ink); border-radius:18px; color:var(--ink); background:white; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; font-weight:900; cursor:pointer; box-shadow:0 5px 0 var(--ink); transition:transform .12s,box-shadow .12s,background .12s; }
+.symbol-button strong { font-size:40px; line-height:1; }
+.symbol-button small { font-size:15px; line-height:1.2; font-weight:900; }
 .symbol-button:hover { background:#fff8d8; }
 .symbol-button:active,.symbol-button.selected { transform:translateY(4px); box-shadow:0 1px 0 var(--ink); background:var(--yellow); }
 .symbol-button:focus-visible,.action-button:focus-visible { outline:4px solid rgba(77,155,214,.35); outline-offset:3px; }
@@ -94,7 +96,8 @@ footer { padding:20px 0 38px; color:#837b70; text-align:center; font-family:"Gow
 @media (max-width:420px) {
   .app-shell { width:calc(100% - 20px); }
   .number-card { min-height:122px; }
-  .symbol-button { width:105px; }
+  .symbol-choices { gap:8px; }
+  .symbol-button { width:96px; min-height:84px; }
   .action-button { width:100%; }
 }
 

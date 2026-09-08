@@ -13,7 +13,7 @@ const state = {
 };
 
 function randomTwoDigitNumber() {
-  return Math.floor(Math.random() * 90) + 10;
+  return Math.floor(Math.random() * 51) + 50;
 }
 
 function makeQuestion() {
@@ -78,11 +78,11 @@ function renderQuestion() {
       <div class="symbol-slot" id="symbol-slot" aria-live="polite">?</div>
       <div class="number-card">${state.right}</div>
     </div>
-    <h2 class="compare-title">어느 기호가 알맞을까요?</h2>
+    <h2 class="compare-title">두 수의 크기를 비교해 봅시다.</h2>
     <div class="symbol-choices">
-      <button class="symbol-button" data-symbol="&lt;" aria-label="왼쪽 수가 더 작습니다">&lt;</button>
-      <button class="symbol-button" data-symbol="=" aria-label="두 수가 같습니다">=</button>
-      <button class="symbol-button" data-symbol="&gt;" aria-label="왼쪽 수가 더 큽니다">&gt;</button>
+      <button class="symbol-button" data-symbol="&lt;" aria-label="왼쪽 수가 더 작습니다"><strong>&lt;</strong><small>작습니다</small></button>
+      <button class="symbol-button" data-symbol="=" aria-label="두 수가 같습니다"><strong>=</strong><small>같습니다</small></button>
+      <button class="symbol-button" data-symbol="&gt;" aria-label="왼쪽 수가 더 큽니다"><strong>&gt;</strong><small>큽니다</small></button>
     </div>
     <div class="actions">
       <button class="action-button hint-button" id="hint-button">🧱 십의 묶음 힌트</button>
