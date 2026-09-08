@@ -1,0 +1,11 @@
+{
+  "name": "two-digit-number-compare",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node dev-server.mjs",
+    "check": "node --check app.js"
+  }
+}
+
