@@ -23,7 +23,6 @@ button { font:inherit; }
 .brand small,.brand strong { display:block; }
 .brand small { margin-bottom:7px; color:var(--orange); font-size:12px; font-weight:900; letter-spacing:.05em; }
 .brand strong { font-size:clamp(22px,3vw,34px); line-height:1.2; letter-spacing:-.04em; }
-.lesson-chip { flex:0 0 auto; padding:10px 16px; border-radius:999px; color:#5c5145; background:#fff4c9; font-size:13px; font-weight:900; }
 main { padding:42px 0 34px; outline:none; }
 .practice-card,.result-card { position:relative; overflow:hidden; padding:clamp(25px,5vw,48px); border:2px solid var(--ink); border-radius:32px; background:rgba(255,255,255,.92); box-shadow:10px 10px 0 var(--shadow); }
 .practice-card::before { content:""; position:absolute; width:18px; height:18px; left:55px; top:42px; background:var(--yellow); transform:rotate(45deg); border-radius:4px; opacity:.8; }
@@ -80,7 +79,6 @@ footer { padding:20px 0 38px; color:#837b70; text-align:center; font-family:"Gow
 
 @media (max-width:720px) {
   .site-header { min-height:106px; }
-  .lesson-chip { display:none; }
   .brand { gap:12px; }
   .brand-mark { width:52px; height:52px; font-size:17px; }
   .brand small { font-size:9px; letter-spacing:0; }
