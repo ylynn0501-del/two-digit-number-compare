@@ -85,7 +85,7 @@ function renderQuestion() {
       <button class="symbol-button" data-symbol="&gt;" aria-label="왼쪽 수가 더 큽니다"><strong>&gt;</strong><small>큽니다</small></button>
     </div>
     <div class="actions">
-      <button class="action-button hint-button" id="hint-button">🧱 십의 묶음 힌트</button>
+      <button class="action-button hint-button" id="hint-button">🧱 숫자 블록 힌트보기</button>
       <button class="action-button check-button" id="check-button" disabled>정답 확인</button>
     </div>
     <section class="hint-panel" id="hint-panel" ${state.hintOpen ? '' : 'hidden'} aria-label="십의 묶음 힌트">
@@ -118,7 +118,7 @@ function toggleHint() {
   state.hintOpen = !state.hintOpen;
   const panel = document.querySelector('#hint-panel');
   panel.hidden = !state.hintOpen;
-  document.querySelector('#hint-button').textContent = state.hintOpen ? '🧱 힌트 닫기' : '🧱 십의 묶음 힌트';
+  document.querySelector('#hint-button').textContent = state.hintOpen ? '🧱 힌트 닫기' : '🧱 숫자 블록 힌트보기';
   if (state.hintOpen) panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
